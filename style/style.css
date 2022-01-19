@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.contenedor{
+    color: white;
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 50px 40px;
+    font-size: 30px;
+}
+
+p{
+    margin: 20px 40px;
+    font-size: 20px;
+    height: 25vh;
+}
+
+img{
+    height: 5vh;
+}
+
+.car-naranja{
+    margin: 50px 50px;
+}
+
+.naranja{
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.naranja .boton{
+    color: hsl(31, 77%, 52%);
+}
+
+.car-aqua{
+    margin: 50px 50px;
+}
+
+.aqua{
+    background:hsl(184, 100%, 22%);
+}
+
+.aqua .boton{
+    color: hsl(184, 100%, 22%);
+}
+
+.car-verde{
+    margin: 50px 50px;
+}
+
+.verde{
+    background:hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.verde .boton{
+    color: hsl(179, 100%, 13%);
+}
+
+.boton{
+    background: white;
+    border-radius: 20px;
+    padding: 15px 5px;
+    text-align: left;
+    margin: 60px 50px 0 50px;
+}
+
+.naranja .boton:hover{
+    cursor: pointer;
+    background: hsl(31, 77%, 52%);
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.aqua .boton:hover{
+    cursor: pointer;
+    background: hsl(184, 100%, 22%);
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.verde .boton:hover{
+    cursor: pointer;
+    background: hsl(179, 100%, 13%);
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+    p{
+        font-size: 15px;
+    }
+
+    .boton{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .naranja{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .boton{
+        margin-bottom: 30px;
+    }
+
+    .verde{
+        border-radius: 0 0 10px 10px;
+    }
+}
